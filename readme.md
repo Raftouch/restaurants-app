@@ -3,5 +3,6 @@
 - [x] add data
 - [x] create components
 - [x] routing
-- [ ] create context
+- [x] create restaurant context
+- [x] create favourite restaurant context
 - [ ] local storage

@@ -14,7 +14,7 @@ export default function DetailsPage() {
     if (restaurant == null) return null;
   
     return (
-      <div className="h-[100vh] flex items-center text-black">
+      <div className="pt-40 flex flex-col">
         <h1>{restaurant.name}</h1>
         <p>{restaurant.description_long}</p>
       </div>
