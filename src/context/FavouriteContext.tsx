@@ -1,5 +1,6 @@
 import { createContext, ReactNode, useContext, useState } from "react";
 import { restaurants } from "../data/restaurants";
+import useLocalStorage from "../hooks/useLocalStorage";
 import FavouritePage from "../pages/FavouritePage";
 
 type FavouriteRestaurantProviderProps = {
@@ -13,7 +14,7 @@ type FavRestaurant = {
 
 type FavouriteRestaurantContext = {
   favouriteRestaurantQuantity: number;
-//   favouriteRestaurants: FavRestaurant[];
+  favRestaurants: FavRestaurant[];
   getItemQuantity: (id: number) => number;
   addItem: (id: number) => void;
   removeItem: (id: number) => void;
@@ -30,6 +31,7 @@ export function useFavouriteRestaurant() {
 export function FavouriteRestaurantProvider({
   children,
 }: FavouriteRestaurantProviderProps) {
+//   const [favRestaurants, setFavRestaurants] = useLocalStorage<FavRestaurant[]>("favourite-restaurants",[]);
   const [favRestaurants, setFavRestaurants] = useState<FavRestaurant[]>([]);
 
   const favouriteRestaurantQuantity = favRestaurants.reduce(
@@ -64,6 +66,7 @@ export function FavouriteRestaurantProvider({
   return (
     <FavouriteRestaurantContext.Provider
       value={{
+        favRestaurants,
         favouriteRestaurantQuantity,
         getItemQuantity,
         addItem,
