@@ -1,4 +1,6 @@
 - [x] project setup
-- [ ] create model
-- [ ] add data
-- [ ] 
+- [x] create model
+- [x] add data
+- [ ] create components
+- [ ] routing
+- [ ] create context
