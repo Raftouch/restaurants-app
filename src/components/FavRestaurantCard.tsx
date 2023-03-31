@@ -11,7 +11,7 @@ export default function FavRestaurantCard({
   id,
   quantity,
 }: FavRestaurantCardProps) {
-  const { removeItem } = useFavouriteRestaurant();
+  const { addItem, removeItem } = useFavouriteRestaurant();
   const favRestaurant = restaurants.find((restaurant) => restaurant.id === id);
   if (favRestaurant == null) return null;
 
@@ -20,6 +20,13 @@ export default function FavRestaurantCard({
       {/* {favRestaurant.img} */}
       <h1>{favRestaurant.name}</h1>
       <p>{favRestaurant.description_short}</p>
+      <div className="mt-auto border rounded text-center">
+        {quantity === 0 ? (
+          <button className="bg-green-300 w-full" onClick={() => addItem(favRestaurant.id)}>Add to Favourites</button>
+        ) : (
+          <button className="bg-red-300 w-full" onClick={() => removeItem(favRestaurant.id)}>Remove from Favourites</button>
+        )}
+      </div>
     </div>
   );
 }

@@ -5,4 +5,6 @@
 - [x] routing
 - [x] create restaurant context
 - [x] create favourite restaurant context
-- [ ] local storage
+- [x] local storage
+- [ ] modal
+- [ ] improve style
