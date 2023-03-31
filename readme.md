@@ -1,6 +1,7 @@
 - [x] project setup
 - [x] create model
 - [x] add data
-- [ ] create components
-- [ ] routing
+- [x] create components
+- [x] routing
 - [ ] create context
+- [ ] local storage
