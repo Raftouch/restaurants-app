@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import { FavouriteRestaurantProvider } from "./context/FavouriteContext";
@@ -9,7 +9,6 @@ import FavouritePage from "./pages/FavouritePage";
 import HomePage from "./pages/HomePage";
 
 function App() {
-  // const restaurantsData = restaurants
   
   return (
     <FavouriteRestaurantProvider>
@@ -28,4 +27,3 @@ function App() {
 }
 
 export default App;
-// export {RestaurantsData}
