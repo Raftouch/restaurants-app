@@ -9,7 +9,7 @@ export const restaurants: Restaurant[] = [
     description_short: "Un moment à part",
     description_long:
       "L'Échappée réunit tous les critères pour un repas réussi : une cuisine gastronomique, récompensée d'une étoile au Guide Michelin, et une vue légendaire sur la célèbre cathédrale de Notre-Dame. Que demander de plus ?",
-    img: "../assets/restau.png",
+    img: "../assets/restau1.png",
     menu: {
       entrees: ["x", "y", "z"],
       dishes: ["x", "y", "z"],
@@ -38,7 +38,7 @@ export const restaurants: Restaurant[] = [
     description_short: "Restaurant de poissons",
     description_long:
       "Aux filets bleus vous accueille pour venir déguster la pêche du jour ! Dans un cadre magnifique avec vue directe sur la mer.",
-    img: "../assets/restau.png",
+    img: "../assets/restau3.png",
     menu: {
       entrees: ["x", "y", "z"],
       dishes: ["x", "y", "z"],
@@ -52,7 +52,7 @@ export const restaurants: Restaurant[] = [
     description_short: "Brasserie parisienne",
     description_long:
       "Soupe à l'oignon, charcuterie et steaks servis dans une brasserie haut de gamme avec des salles décorées dans des styles différents.",
-    img: "../assets/restau2.png",
+    img: "../assets/restau4.png",
     menu: {
       entrees: ["x", "y", "z"],
       dishes: ["x", "y", "z"],
@@ -66,7 +66,7 @@ export const restaurants: Restaurant[] = [
     description_short: "Cuisine basque et chaleureuse",
     description_long:
       "Plats basques gastronomiques dans un lieu aux tons chauds et colorés, avec chaises et comptoir en bois.",
-    img: "../assets/restau.png",
+    img: "../assets/restau5.png",
     menu: {
       entrees: ["x", "y", "z"],
       dishes: ["x", "y", "z"],
@@ -80,7 +80,7 @@ export const restaurants: Restaurant[] = [
     description_short: "Brasserie pittoresque de spécialités françaises",
     description_long:
       "Cuisine et boissons de brasserie parisienne classique dans un restaurant établi de longue date avec terrasse au bord du canal.",
-    img: "../assets/restau2.png",
+    img: "../assets/restau6.png",
     menu: {
       entrees: ["x", "y", "z"],
       dishes: ["x", "y", "z"],
@@ -94,7 +94,7 @@ export const restaurants: Restaurant[] = [
     description_short: "Cuisine japonaise, cadre à l'ambiance détendue",
     description_long:
       "Restaurant japonais de style décontracté servant ramens, plats sautés et donburis, accompagnés de bière et de saké.",
-    img: "../assets/restau.png",
+    img: "../assets/restau7.png",
     menu: {
       entrees: ["x", "y", "z"],
       dishes: ["x", "y", "z"],

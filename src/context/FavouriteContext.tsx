@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useContext, useState } from "react";
+import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useState } from "react";
 import Modal from "../components/Modal";
 import useLocalStorage from "../hooks/useLocalStorage";
 import FavouritePage from "../pages/FavouritePage";
@@ -12,19 +12,19 @@ type FavRestaurant = {
   quantity: number;
 };
 
-type FavouriteRestaurantContext = {
+type FavouriteRestaurantContextType = {
   favouriteRestaurantQuantity: number;
   favRestaurants: FavRestaurant[];
   getItemQuantity: (id: number) => number;
   addItem: (id: number) => void;
   removeItem: (id: number) => void;
-  // modal: boolean
+  // modal: boolean;
   //   open: () => void
   //   close: () => void
 };
 
 const FavouriteRestaurantContext = createContext(
-  {} as FavouriteRestaurantContext
+  {} as FavouriteRestaurantContextType
 );
 
 export function useFavouriteRestaurant() {
@@ -32,12 +32,12 @@ export function useFavouriteRestaurant() {
 }
 
 export function FavouriteRestaurantProvider({
-  children,
+  children
 }: FavouriteRestaurantProviderProps) {
   const [favRestaurants, setFavRestaurants] = useLocalStorage<FavRestaurant[]>("favourite-restaurants",[]);
 //   const [favRestaurants, setFavRestaurants] = useState<FavRestaurant[]>([]);
 
-// const [modal, setModal] = useState(false)
+// const [modal, setModal] = useState
 // const open = () => setModal(true)
 // const close = () => setModal(false)
 
@@ -54,13 +54,13 @@ export function FavouriteRestaurantProvider({
   }
 
   function addItem(id: number) {
-    setFavRestaurants((currentResraurants) => {
+    setFavRestaurants((currentRestaurants) => {
       if (
-        currentResraurants.find((restaurant) => restaurant.id === id) == null
+        currentRestaurants.find((restaurant) => restaurant.id === id) == null
       ) {
-        return [...currentResraurants, { id, quantity: 1 }];
+        return [...currentRestaurants, { id, quantity: 1 }];
       } else {
-        return currentResraurants;
+        return currentRestaurants;
       }
     });
   }
@@ -69,6 +69,7 @@ export function FavouriteRestaurantProvider({
     setFavRestaurants((currentRestaurants) => {
       return currentRestaurants.filter((restaurant) => restaurant.id !== id);
     });
+    // setModal(false)
   }
 
   return (
@@ -85,8 +86,6 @@ export function FavouriteRestaurantProvider({
       }}
     >
       {children}
-      <FavouritePage />
-      {/* <Modal /> */}
     </FavouriteRestaurantContext.Provider>
   );
 }

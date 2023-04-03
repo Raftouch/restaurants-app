@@ -6,5 +6,5 @@
 - [x] create restaurant context
 - [x] create favourite restaurant context
 - [x] local storage
-- [ ] modal
+- [x] modal
 - [ ] improve style
