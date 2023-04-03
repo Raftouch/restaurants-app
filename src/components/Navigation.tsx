@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useFavouriteRestaurant } from "../context/FavouriteContext";
 
 export default function Navigation() {
-  const {favouriteRestaurantQuantity} = useFavouriteRestaurant()
+  const { favouriteRestaurantQuantity } = useFavouriteRestaurant();
 
   return (
     <div className="font-serif fixed h-[100px] w-full bg-slate-600 text-white flex justify-between items-center px-5">
@@ -13,9 +13,11 @@ export default function Navigation() {
           Home
         </Link>
         <Link to="/favourites" className="hover:text-slate-500">
-          <span className="relative">Favourites</span> 
+          <span className="relative">Favourites</span>
           {favouriteRestaurantQuantity > 0 && (
-            <span className="text-sm absolute top-16 right-10 border rounded-full px-2">{favouriteRestaurantQuantity}</span>
+            <span className="text-sm absolute top-16 right-10 border rounded-full px-2">
+              {favouriteRestaurantQuantity}
+            </span>
           )}
         </Link>
       </span>

@@ -9,18 +9,17 @@ import FavouritePage from "./pages/FavouritePage";
 import HomePage from "./pages/HomePage";
 
 function App() {
-  
   return (
     <FavouriteRestaurantProvider>
-      <RestaurantContext.Provider value={{restaurants}}>
-      <Router>
-        <Navigation />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/details/:id" element={<DetailsPage />} />
-          <Route path="/favourites" element={<FavouritePage />} />
-        </Routes>
-      </Router>
+      <RestaurantContext.Provider value={{ restaurants }}>
+        <Router>
+          <Navigation />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/details/:id" element={<DetailsPage />} />
+            <Route path="/favourites" element={<FavouritePage />} />
+          </Routes>
+        </Router>
       </RestaurantContext.Provider>
     </FavouriteRestaurantProvider>
   );

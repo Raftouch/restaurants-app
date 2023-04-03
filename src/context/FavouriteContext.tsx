@@ -1,7 +1,5 @@
-import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useState } from "react";
-import Modal from "../components/Modal";
+import { createContext, ReactNode, useContext } from "react";
 import useLocalStorage from "../hooks/useLocalStorage";
-import FavouritePage from "../pages/FavouritePage";
 
 type FavouriteRestaurantProviderProps = {
   children: ReactNode;
@@ -18,9 +16,6 @@ type FavouriteRestaurantContextType = {
   getItemQuantity: (id: number) => number;
   addItem: (id: number) => void;
   removeItem: (id: number) => void;
-  // modal: boolean;
-  //   open: () => void
-  //   close: () => void
 };
 
 const FavouriteRestaurantContext = createContext(
@@ -32,20 +27,17 @@ export function useFavouriteRestaurant() {
 }
 
 export function FavouriteRestaurantProvider({
-  children
+  children,
 }: FavouriteRestaurantProviderProps) {
-  const [favRestaurants, setFavRestaurants] = useLocalStorage<FavRestaurant[]>("favourite-restaurants",[]);
-//   const [favRestaurants, setFavRestaurants] = useState<FavRestaurant[]>([]);
-
-// const [modal, setModal] = useState
-// const open = () => setModal(true)
-// const close = () => setModal(false)
+  const [favRestaurants, setFavRestaurants] = useLocalStorage<FavRestaurant[]>(
+    "favourite-restaurants",
+    []
+  );
 
   const favouriteRestaurantQuantity = favRestaurants.reduce(
     (quantity, restaurant) => restaurant.quantity + quantity,
     0
   );
-
 
   function getItemQuantity(id: number) {
     return (
@@ -69,15 +61,11 @@ export function FavouriteRestaurantProvider({
     setFavRestaurants((currentRestaurants) => {
       return currentRestaurants.filter((restaurant) => restaurant.id !== id);
     });
-    // setModal(false)
   }
 
   return (
     <FavouriteRestaurantContext.Provider
       value={{
-        // modal,
-        // open,
-        // close,
         favRestaurants,
         favouriteRestaurantQuantity,
         getItemQuantity,

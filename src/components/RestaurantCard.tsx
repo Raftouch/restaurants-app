@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useFavouriteRestaurant } from "../context/FavouriteContext";
 import { Restaurant } from "../models/Restaurant";

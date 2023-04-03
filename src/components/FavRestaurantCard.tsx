@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useFavouriteRestaurant } from "../context/FavouriteContext";
 import { restaurants } from "../data/restaurants";
 import Modal from "./Modal";
@@ -21,18 +21,18 @@ export default function FavRestaurantCard({
 
   return (
     <div className="border rounded w-[350px] flex flex-col gap-2 p-8 font-serif">
-      {/* <Link to={`/details/${favRestaurant.id}`}> */}
-      <div>
-        <img
-          className="w-full h-[350px]"
-          src={favRestaurant.img}
-          alt={favRestaurant.name}
-        />
-        <h1 className="font-bold mt-2">{favRestaurant.name}</h1>
-        <p>{favRestaurant.address}</p>
-        <p>{favRestaurant.description_short}</p>
-      </div>
-      {/* </Link> */}
+      <Link to={`/details/${favRestaurant.id}`}>
+        <div>
+          <img
+            className="w-full h-[350px]"
+            src={favRestaurant.img}
+            alt={favRestaurant.name}
+          />
+          <h1 className="font-bold mt-2">{favRestaurant.name}</h1>
+          <p>{favRestaurant.address}</p>
+          <p>{favRestaurant.description_short}</p>
+        </div>
+      </Link>
       <div className="mt-auto border rounded text-center">
         {quantity === 0 ? (
           <button

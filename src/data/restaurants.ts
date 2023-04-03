@@ -1,6 +1,5 @@
 import { Restaurant } from "../models/Restaurant";
 
-
 export const restaurants: Restaurant[] = [
   {
     id: 0,
