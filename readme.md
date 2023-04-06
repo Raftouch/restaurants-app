@@ -8,4 +8,4 @@
 - [x] local storage
 - [x] modal
 - [x] improve style & prettier
-- [ ] final check
+- [x] final check
