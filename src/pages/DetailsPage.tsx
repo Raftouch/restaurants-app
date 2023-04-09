@@ -20,20 +20,37 @@ export default function DetailsPage() {
   return (
     <div className="font-serif pt-40 flex gap-10 justify-center flex-wrap">
       <img
-        className="w-[350px] h-[450px]"
+        className="w-[420px] h-[550px]"
         src={restaurant.img}
         alt={restaurant.name}
       />
-      <div className="w-[350px] h-[450px] text-center flex flex-col justify-center border p-8">
-        <h1 className="font-bold uppercase">{restaurant.name}</h1>
-        <p className="m-4">{restaurant.description_long}</p>
-        <div>
-          <h2 className="font-bold">Menu</h2>
-          <p>{restaurant.menu.entrees}</p>
-          <p>{restaurant.menu.dishes}</p>
-          <p>{restaurant.menu.desserts}</p>
+      <div className="w-[420px] h-[550px] flex flex-col justify-center border p-4">
+        <div className="flex flex-col gap-2">
+          <h1 className="font-bold uppercase text-center">{restaurant.name}</h1>
+          <p>{restaurant.description_long}</p>
+          <h2 className="font-bold text-center">Menu</h2>
+          <div>
+            <h3 className="italic">Entrées</h3>
+            <div className="ml-8">
+              {restaurant.menu.entrees.map((entree) => (
+                <li>{entree}</li>
+              ))}
+            </div>
+            <h3 className="italic">Plats</h3>
+            <div className="ml-8">
+              {restaurant.menu.dishes.map((dish) => (
+                <li>{dish}</li>
+              ))}
+            </div>
+            <h3 className="italic">Desserts</h3>
+            <div className="ml-8">
+              {restaurant.menu.desserts.map((dessert) => (
+                <li>{dessert}</li>
+              ))}
+            </div>
+          </div>
         </div>
-        <div className="mt-8 border rounded text-center">
+        <div className="mt-4 border rounded text-center">
           {quantity === 0 ? (
             <button
               className="bg-green-300 w-full"

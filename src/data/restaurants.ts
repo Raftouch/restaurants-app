@@ -10,9 +10,21 @@ export const restaurants: Restaurant[] = [
       "L'Échappée réunit tous les critères pour un repas réussi : une cuisine gastronomique, récompensée d'une étoile au Guide Michelin, et une vue légendaire sur la célèbre cathédrale de Notre-Dame. Que demander de plus ?",
     img: "../assets/restau1.png",
     menu: {
-      entrees: ["x", "y", "z"],
-      dishes: ["x", "y", "z"],
-      desserts: ["x", "y", "z"],
+      entrees: [
+        "Profiterolles d'escargots aux champignons",
+        "Pressé de joue de boeuf au foie gras",
+        "Salade de pied de porc pané au vinaigre",
+      ],
+      dishes: [
+        "Filet de boeuf au poivre gris",
+        "Poulet fermier grillé",
+        "Couscous de St Pierre",
+      ],
+      desserts: [
+        "Terrine de chocolat",
+        "Gratin d'ananas",
+        "Pain perdu caramel au beurre salé",
+      ],
     },
   },
   {
@@ -24,9 +36,17 @@ export const restaurants: Restaurant[] = [
       "Pour les amoureux des légumes et des produits de saison, Le Bain est un endroit idéal. Le tout dans un lieu agréable et cosy.",
     img: "../assets/restau2.png",
     menu: {
-      entrees: ["x", "y", "z"],
-      dishes: ["x", "y", "z"],
-      desserts: ["x", "y", "z"],
+      entrees: [
+        "Toast de poivrons grillés",
+        "Nougat de chèvre",
+        "Tarte à la courgette",
+      ],
+      dishes: ["Brochette de St Jacques", "Potée au chou", "Dos de morue"],
+      desserts: [
+        "Pruneaux à l'armagnac",
+        "Crumble aux pommes et poires",
+        "Bla bla au rhum",
+      ],
     },
   },
   {
@@ -39,9 +59,17 @@ export const restaurants: Restaurant[] = [
       "Aux filets bleus vous accueille pour venir déguster la pêche du jour ! Dans un cadre magnifique avec vue directe sur la mer.",
     img: "../assets/restau3.png",
     menu: {
-      entrees: ["x", "y", "z"],
-      dishes: ["x", "y", "z"],
-      desserts: ["x", "y", "z"],
+      entrees: [
+        "Rilletes de lapin",
+        "Harengs frais grillés",
+        "Carpaccio de tomates vertes boeuf seché",
+      ],
+      dishes: ["Tartare de boeuf", "Tête de veau", "Onglet de boeuf"],
+      desserts: [
+        "Profiterolle vanille-chocolat",
+        "Camembert au lait cru",
+        "Gratin d'ananas",
+      ],
     },
   },
   {
@@ -53,9 +81,21 @@ export const restaurants: Restaurant[] = [
       "Soupe à l'oignon, charcuterie et steaks servis dans une brasserie haut de gamme avec des salles décorées dans des styles différents.",
     img: "../assets/restau4.png",
     menu: {
-      entrees: ["x", "y", "z"],
-      dishes: ["x", "y", "z"],
-      desserts: ["x", "y", "z"],
+      entrees: [
+        "Profiterolles d'escargots aux champignons",
+        "Pressé de joue de boeuf au foie gras",
+        "Salade de pied de porc pané au vinaigre",
+      ],
+      dishes: [
+        "Filet de boeuf au poivre gris",
+        "Poulet fermier grillé",
+        "Couscous de St Pierre",
+      ],
+      desserts: [
+        "Terrine de chocolat",
+        "Gratin d'ananas",
+        "Pain perdu caramel au beurre salé",
+      ],
     },
   },
   {
@@ -67,9 +107,17 @@ export const restaurants: Restaurant[] = [
       "Plats basques gastronomiques dans un lieu aux tons chauds et colorés, avec chaises et comptoir en bois.",
     img: "../assets/restau5.png",
     menu: {
-      entrees: ["x", "y", "z"],
-      dishes: ["x", "y", "z"],
-      desserts: ["x", "y", "z"],
+      entrees: [
+        "Toast de poivrons grillés",
+        "Nougat de chèvre",
+        "Tarte à la courgette",
+      ],
+      dishes: ["Brochette de St Jacques", "Potée au chou", "Dos de morue"],
+      desserts: [
+        "Pruneaux à l'armagnac",
+        "Crumble aux pommes et poires",
+        "Bla bla au rhum",
+      ],
     },
   },
   {
@@ -81,9 +129,17 @@ export const restaurants: Restaurant[] = [
       "Cuisine et boissons de brasserie parisienne classique dans un restaurant établi de longue date avec terrasse au bord du canal.",
     img: "../assets/restau6.png",
     menu: {
-      entrees: ["x", "y", "z"],
-      dishes: ["x", "y", "z"],
-      desserts: ["x", "y", "z"],
+      entrees: [
+        "Rilletes de lapin",
+        "Harengs frais grillés",
+        "Carpaccio de tomates vertes boeuf seché",
+      ],
+      dishes: ["Tartare de boeuf", "Tête de veau", "Onglet de boeuf"],
+      desserts: [
+        "Profiterolle vanille-chocolat",
+        "Camembert au lait cru",
+        "Gratin d'ananas",
+      ],
     },
   },
   {
@@ -95,9 +151,21 @@ export const restaurants: Restaurant[] = [
       "Restaurant japonais de style décontracté servant ramens, plats sautés et donburis, accompagnés de bière et de saké.",
     img: "../assets/restau7.png",
     menu: {
-      entrees: ["x", "y", "z"],
-      dishes: ["x", "y", "z"],
-      desserts: ["x", "y", "z"],
+      entrees: [
+        "Profiterolles d'escargots aux champignons",
+        "Pressé de joue de boeuf au foie gras",
+        "Salade de pied de porc pané au vinaigre",
+      ],
+      dishes: [
+        "Filet de boeuf au poivre gris",
+        "Poulet fermier grillé",
+        "Couscous de St Pierre",
+      ],
+      desserts: [
+        "Terrine de chocolat",
+        "Gratin d'ananas",
+        "Pain perdu caramel au beurre salé",
+      ],
     },
   },
 ];
